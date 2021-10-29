@@ -1,0 +1,758 @@
+
+/* Rules for font-families:
+         font-family: 'Lora', serif;
+         font-family: 'Poppins', sans-serif;
+         font-family: 'PT Sans Narrow', sans-serif;
+
+Colors used: 
+        #e4000f - logo
+        #c9002e - Sale
+        #222222 - Text
+        #faf9f7 - Background
+        #f4eddd - New Arrivals and Magazine background
+        #e4e4e4 - Footer background
+
+*/
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #faf9f7;
+    font-family: "Poppins", "Lato", "Helvetica", "Roboto", "Arial", sans-serif;
+    color: #222222;
+    
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.hamburger {
+    display: none;
+}
+
+a:hover, a:visited, a:active, a:link {
+    color: #222222;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+li a {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.right li {
+    display: flex;
+    margin-left: 20px;
+}
+
+.left li {
+    margin-right: 20px;
+}
+
+.right li img {
+    margin-right: 4px;
+}
+
+.list {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.left {
+    margin-left: 0;
+    padding-left: 30px;
+}
+
+.right {
+    padding-right: 30px;
+}
+
+
+
+.icon {
+    width: 20px;
+
+}
+
+.nav-upper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logo-container img {
+    width: 70px;
+}
+
+.menu {
+    margin-top: 30px;
+}
+
+.menu li {
+    margin: 0 20px;
+    font-size: 18px;
+    font-family: "PT Sans Narrow", "Poppins", "Helvetica", "Arial", sans-serif;
+}
+
+main {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1000px;
+    
+}
+
+.info p {
+    text-align: center;
+    margin: auto;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.sale {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #c9002e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sale h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.sale ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sale a {
+    display: inline;
+    background-color: white;
+    padding: 7px 11px;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.main-trend, .trend-home {
+    max-width: 1000px;
+    width: 100%;
+    height: 500px;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+
+}
+
+.main-trend {
+    background-image: url("resources/Main.jpg");
+}
+
+
+
+.main-trend-title, .trend-home-title {
+    margin-top: 350px;
+}
+
+
+.main-trend-shop, .trend-home-shop {
+    width: 80px;
+    display: inline-block;
+    color: #222222;
+    background-color: white;
+    padding: 8px 10px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.main-trend-shop:hover {
+    background-color: #E0E0E0;
+}
+
+.new-arrivals {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4eddd;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.new-arrivals img {
+    display: none;
+}
+
+.new-arrivals a{
+    display: inline;
+    padding: 7px 11px;
+    margin: 0 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #222;
+}   
+.new-arrivals h2{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.new-arrivals ul {
+    margin-bottom: 25px;
+}
+
+.trending {
+    display: grid;
+    width: 1000px;
+    grid-auto-columns: 40px repeat(8, 80px) 40px;
+    grid-auto-rows: 70px 200px;
+    justify-items: center;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.trending-plus {
+    display: none;
+}
+
+.trending h3 {
+    grid-area: 1 / 1 / span 1 / span 10;
+    justify-self: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.trending img {
+    width: 90px;
+}
+
+.arrow img {
+    width: 20px;
+}
+
+.arrow {
+    margin-top: 40px;
+}
+
+.left {
+    justify-self: right;
+}
+
+.right {
+    justify-self: left;
+}
+
+.p1 {
+    margin-top: 7px;
+    color: #808080;
+}
+
+.p2 {
+    font-weight: 600;
+}
+
+.a {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.b {
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+
+.c {
+    grid-area: 2 / 4 / span 1 / span 1;
+}
+.d {
+    grid-area: 2 / 5 / span 1 / span 1;
+}
+.e {
+    grid-area: 2 / 6 / span 1 / span 1;
+}
+.f {
+    grid-area: 2 / 7 / span 1 / span 1;
+}
+.g {
+    grid-area: 2 / 8 / span 1 / span 1;
+}
+.h {
+    grid-area: 2 / 9 / span 1 / span 1;
+}
+
+.trend-home {
+    background-image: url("resources/Home-christmas.jpg");
+    background-position: 50% 70%;
+}
+
+.trend-home-title, .trend-home-description {
+    background-color: black;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+} 
+
+.magazine {
+    background-color: #f4eddd;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.magazine h2 {
+    margin-top: 40px;
+    font-size: 44px;
+    
+}
+
+.magazine p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.magazine a {
+    font-size: 16px;
+}
+
+.magazine a:hover {
+    opacity: 60%;
+}
+
+.read {
+    margin-top: 10px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.grid-magazine {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 30px;
+    align-self: center;
+    justify-content: center;
+}
+
+.grid-magazine img {
+    width: 100%;
+    height: auto;
+
+}
+
+.grid-magazine-item {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 50px 80px 60px;
+    justify-items: center;
+}
+
+.grid-magazine-item h5 {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    align-self: start;
+}
+
+.grid-magazine-item h4 {
+    font-weight: 600;
+    max-width: 200px;
+}
+
+.grid-magazine-item p img {
+    width: 15px;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: #e4e4e4;
+}
+
+.footer-list img, .read-more {
+    display: none;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-list {
+    display: block;
+}
+
+.footer-list li {
+    display: block;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+
+.footer-list h6 {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.membership-text {
+    font-size: 12px;;
+    margin-top: 30px;
+}
+
+.more-text {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.more-text a:hover {
+    color: #c9002e;
+}
+
+.more-text img {
+    width: 15px;
+    padding-left: 5px;
+    
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.social-media img {
+    width: 18px;
+    margin: 0 20px;
+}
+
+.copyright-info {
+    max-width: 650px;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.black-logo {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    height: 40px;
+    letter-spacing: 2px;
+}
+
+.black-logo img {
+    width: 30px;
+    margin: auto 10px;
+}
+
+.black-logo span {
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.uzb {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    
+    .trending {
+        background-color: #f4eddd;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        max-width: 1024px;
+        width: 100%;
+
+    }
+    
+    .trending .a, .trending .b, .trending .c, .trending .d, .trending .e, .trending .f, .trending .g, .trending .h, .trending .arrow{
+        display: none;
+    }
+
+
+    .trending-plus {
+        display: inline;
+        padding-left: 20px;
+    }
+
+    .trending-plus img {
+      width: 15px;
+    }
+
+    .magazine {
+        max-width: 1000px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+
+    header img {
+        display: inline-block;
+        width: 20px;
+    }
+
+    .info p{
+        margin-bottom: 20px;
+    }
+
+    .nav-upper li, .menu {
+        display: none;
+    }
+    
+    .logo-container img {
+        width: 30px;
+    }
+    
+    .logo-container {
+        margin-bottom: 10px;
+    }
+    .hamburger {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 20px;
+    }
+    
+    main {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sale {
+        width: 100%;
+        max-width: 720px;
+        background-color: #c9002e;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .sale p {
+        font-size: 14px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .sale ul {
+        display: none;
+    }
+
+    .main-trend-description {
+        font-size: 14px;
+    }
+
+    .main-trend-shop {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .new-arrivals ul {
+        display: none;
+    }
+    
+    .new-arrivals img {
+        width: 20px;
+        display: block;
+        align-self: center;
+    }
+
+    .plus-icon {
+        display: block;
+        align-self: center;
+        margin-left: 20px;
+    }
+
+    .new-arrivals {
+        width: 100%;
+        max-width: 768px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4eddd;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .trend-home-description {
+        font-size: 14px;
+    }
+
+    .trend-home-shop {
+        font-size: 12px;
+    }
+
+    .magazine h2 {
+        font-size: 30px;
+    }
+
+    .magazine p {
+        font-size: 11px;
+    }
+
+    .magazine a {
+        font-size: 14px;
+    }
+
+    .grid-magazine {
+        margin-top: 30px;
+        margin-bottom: 80px;
+        display: grid;
+        max-width: 768px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .grid-footer ul {
+        display: none;
+    }
+
+
+
+    .footer-list img {
+        display: inline-block;
+        width: 15px;
+
+    }
+
+    .footer-list h6 {
+        font-size: 12px;
+        font-weight: 600
+    }
+
+    .grid-footer {
+        display: block;
+        margin: auto 20px;
+    }
+
+    .shop, .info, .help {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .membership-text { 
+        font-weight: 500;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .help {
+        margin-bottom: 20px;
+    }
+
+
+    .join h6 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .more-text {
+        display: none;
+    }
+
+    .read-more {
+        display: flex;
+        font-size: 12px;
+        font-weight: 600;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .copyright-text {
+        font-size: 12px;
+    }
+
+    .copyright-info, .social-media {
+        margin: 30px 20px;
+    }
+
+}
+
